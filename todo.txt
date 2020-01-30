@@ -1,0 +1,3 @@
+
+* need to add 'home pages' back to db and processing - these add sections to the default landing page
+* need to add 'tasks' back to db and processsing - this adds scripts and methods to generate links (that match some menu items) to a section in the home page

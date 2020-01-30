@@ -1,0 +1,33 @@
+
+<div class="wsdocs">
+   <!-- TODO: Discuss REST semantics (PUT, GET, DELETE) -->
+   <!-- TODO: Discuss WADL to generate code -->
+   <p>All of the Web services accept and return both XML or JSON formatted data.</p>
+   <div id="curlSample" class="curlSample">
+      <p>A sample invocation of a web service using the 'curl' tool could look like this:</p>
+      <pre>
+         curl -k -v
+            --header "Accept:application/json"
+            -H "Content-Type:application/json"
+            -X PUT
+            -d @&lt;datafilename&gt;
+            "http://&lt;USERNAME&gt;:&lt;PASSWORD&gt;@&lt;HOST_ADDRESS&gt;/ui/THE_DESIRED_SERVICE"
+      </pre>
+      <ul>
+         <li>'&lt;HOST_ADDRESS&gt;' is the IP address or DNS name of the web service target device </li>
+         <li>'&lt;USERNAME&gt;:&lt;PASSWORD&gt;' is the web service user credentials used to log in to the target device</li>
+         <li>'/ui/DESIRED_SERVICE' is the web service URL to access</li>
+         <li>The Accept header controls the response type (JSON or XML)</li>
+         <li>The Content-Type header declares the format of the content in the data file you are PUTting (JSON or XML)</li>
+         <li>The '-X PUT' says "generate a HTTP PUT request" (the default is HTTP GET request) PUT, POST, GET, and DELETE are supported as
+             defined by the documentation for the service you are invoking</li>
+         <li>'-d @&lt;datafilename&gt;' specifies the name of the file (for example 'sample.json') that contains the JSON data to send</li>
+         <li>The '-k' and '-v' are optional, used to show progress while debugging responses</li>
+      </ul>
+   </div>
+   <p>The following sections supply details about the web services that are available on this device. You can collapse
+   and expand the sections below by clicking on the section header.</p>
+
+   <p>Help Web Services Documentation</p>
+   <p>Use these API methods to get help data about each web service module.</p>
+</div>

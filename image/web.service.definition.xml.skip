@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webServiceInfo>
+   <displayName>Introduction to Centurylink Abacus Web Services</displayName>
+   <rootUrl>/web-ui-doc</rootUrl>
+   <baseUri>/ui</baseUri>
+   <port>80</port>
+   <publiclyAccessible>true</publiclyAccessible>
+   <ordinal>1</ordinal>
+</webServiceInfo>
