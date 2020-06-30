@@ -37,13 +37,15 @@
    <target name='distribute' depends='deps, dist.js, common.dist.prepare'/>
 
    <target name='deps'>
+      <build.dependent.library dir='lib-web/abacus-twitter-bootstrap'/>
       <build.dependent.library dir='lib-web/abacus-jQuery'/>
    </target>
 
    <target name='dist.js' depends='compile.javascript'>
-      <local.deploy.bootstrap fork.dir='${tree.top}/forks/web-bootstrap-fork'
+      <property name="branded-bootstrap.dir" location="${dist.root}/project/abacus-twitter-bootstrap/${build.mode}/tmp/branded-twitter-bootstrap"/>
+      <local.deploy.bootstrap fork.dir='${dist.root}/web-bootstrap-fork'
                               out.dir='${web.dir}/lib/bootstrap'
-                              src.dir='${tree.top}/lib-web/abacus-twitter-bootstrap/src/less'/>
+                              src.dir='${branded-bootstrap.dir}'/>
       <local.deploy.jquery        target.dir='${web.dir}/lib/abacus-ots' src.dir='${tree.top}/forks/web-jquery-fork'/>
       <local.deploy.abacus.js.ots target.dir='${web.dir}/lib/abacus-ots' src.dir='${tree.top}/lib-web/abacus-lib-js-ots'/>
    </target>

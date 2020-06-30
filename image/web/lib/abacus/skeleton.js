@@ -160,7 +160,7 @@ jQuery.when(jQuery('#bodySkeleton').load('/lib/abacus/skeleton.body.html')).then
             otherIcon.css('height', '44px');
             jQuery('#mainPageAuxIcon').append(otherIcon);
          }
-         var mainIcon = jQuery('<img/>').attr('src', '/lib/abacus/img/CenturyLink_logo.png');
+         var mainIcon = jQuery('<img/>').attr('src', '/lib/abacus/img/logo-small.png');
          mainIcon.attr('alt', 'CenturyLink logo');
          mainIcon.css('height', '44px');
          mainIcon.css('width', '240px');

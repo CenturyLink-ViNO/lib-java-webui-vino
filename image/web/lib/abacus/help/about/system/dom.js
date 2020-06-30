@@ -20,7 +20,7 @@ abacus.About.DOM.getModal = function(version)
       var item = jQuery('<div>').addClass('item');
       relaxed.append(item);
       var image = jQuery('<div>').addClass('image').
-         append(jQuery('<img>').attr('src', '/lib/abacus/img/CenturyLink_logo.png'));
+         append(jQuery('<img>').attr('src', '/lib/abacus/img/logo-small.png'));
       item.append(image);
 
       var innerContent = jQuery('<div>').addClass('content');
