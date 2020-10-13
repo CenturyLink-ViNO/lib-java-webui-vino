@@ -12,7 +12,7 @@ function UserModule()
    this.email = '';
    this.token = '';
 
-   this.keycloak = Keycloak('/lib/abacus/user/keycloak.json');
+   this.keycloak = Keycloak('lib/abacus/user/keycloak.json');
 
    String.prototype.capitalize = function()
    {

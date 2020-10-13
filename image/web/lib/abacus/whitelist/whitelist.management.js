@@ -8,8 +8,8 @@ function WhitelistAddressManagementModule()
 {
    this.showWhitelistAddressManagement = function()
    {
-      pageModule.buildPage('addressMgtPanel', 'Address Management', '/lib/abacus/whitelist/Help.html');
-      jQuery.when(jsInclude('/lib/abacus/whitelist/controller.js')).done(function()
+      pageModule.buildPage('addressMgtPanel', 'Address Management', 'lib/abacus/whitelist/Help.html');
+      jQuery.when(jsInclude('lib/abacus/whitelist/controller.js')).done(function()
       {
          var AddressController = window.AbacusWhitelistedAddressController('addressMgtPanel-bdy');
          AddressController.renderPanel();
@@ -18,8 +18,8 @@ function WhitelistAddressManagementModule()
    };
    this.showBasicSettingsForm = function()
    {
-      pageModule.buildPage('AddressMgtPanel', 'Address Management', '/lib/abacus/whitelist/Help.html');
-      jQuery.when(jsInclude('/lib/abacus/whitelist/controller.js')).done(function()
+      pageModule.buildPage('AddressMgtPanel', 'Address Management', 'lib/abacus/whitelist/Help.html');
+      jQuery.when(jsInclude('lib/abacus/whitelist/controller.js')).done(function()
       {
          var AddressController = window.AbacusWhitelistedAddressController('AddressMgtPanel-bdy');
          AddressController.renderBasicSettings();

@@ -15,7 +15,7 @@ window.AbacusWhitelistedAddressModel = function(controller)
    {
       var def = jQuery.Deferred(function(deferred)
       {
-         var url = '/ui/auth/networkaccess';
+         var url = 'ui/auth/networkaccess';
          var success = function(json)
          {
             if (json.hasOwnProperty('accessList'))
@@ -41,7 +41,7 @@ window.AbacusWhitelistedAddressModel = function(controller)
       delete data.format;
       var def = jQuery.Deferred(function(deferred)
       {
-         var url = '/ui/auth/networkaccess';
+         var url = 'ui/auth/networkaccess';
          var success = function(json)
          {
             deferred.resolve(json.row);
@@ -60,7 +60,7 @@ window.AbacusWhitelistedAddressModel = function(controller)
       delete data.format;
       var def = jQuery.Deferred(function(deferred)
       {
-         var url = '/ui/auth/networkaccess?address=' + data.address;
+         var url = 'ui/auth/networkaccess?address=' + data.address;
          var success = function(json)
          {
             if (json.hasOwnProperty('error'))
@@ -86,7 +86,7 @@ window.AbacusWhitelistedAddressModel = function(controller)
       delete data.format;
       var def = jQuery.Deferred(function(deferred)
       {
-         var url = '/ui/auth/networkaccess';
+         var url = 'ui/auth/networkaccess';
          var success = function(json)
          {
             if (json.hasOwnProperty('error'))

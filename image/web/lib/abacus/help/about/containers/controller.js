@@ -13,7 +13,7 @@ abacus.Containers.Controller = function()
       var outer = this;
       var def = new jQuery.Deferred(function(deferred)
       {
-         var jsFiles = ['/lib/abacus/help/about/containers/model.js', '/lib/abacus/help/about/containers/view.js'];
+         var jsFiles = ['lib/abacus/help/about/containers/model.js', 'lib/abacus/help/about/containers/view.js'];
          jQuery.when(outer.loadJs(jsFiles)).done(function()
          {
             outer.model = new abacus.Containers.Model(outer);

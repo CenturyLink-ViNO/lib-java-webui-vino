@@ -11,7 +11,7 @@ function PageModule()
       addClass('loadingIcon').
       css('text-align', 'center').
       append(jQuery('<img>').
-         attr('src', '/lib/abacus/img/loading.gif'));
+         attr('src', 'lib/abacus/img/loading.gif'));
    this.addLoadingIcon = function(baseId, jqObj)
    {
       // Add a loading icon to the passed in element or id in the dom
@@ -74,7 +74,7 @@ function PageModule()
                addClass('loadingIcon').
                css('text-align', 'center').
                append(jQuery('<img>').
-                  attr('src', '/lib/abacus/img/loading.gif')))));
+                  attr('src', 'lib/abacus/img/loading.gif')))));
    this.showLoadingModal = function(text)
    {
       if (text === undefined)

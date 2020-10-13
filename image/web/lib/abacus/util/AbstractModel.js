@@ -36,7 +36,7 @@ window.AbstractModel = function()
       }).error(function()
       {
          userModule.keycloak.login({
-            redirectUri: '/',
+            redirectUri: '',
             loginHint: username
          });
       });

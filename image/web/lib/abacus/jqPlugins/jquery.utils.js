@@ -6,7 +6,7 @@
 
 if (typeof jQuery.fn.forceNumeric === 'undefined')
 {
-   jsInclude('/lib/abacus/jqPlugins/jquery.forceNumeric.js');
+   jsInclude('lib/abacus/jqPlugins/jquery.forceNumeric.js');
 }
 
 function jqUtils()

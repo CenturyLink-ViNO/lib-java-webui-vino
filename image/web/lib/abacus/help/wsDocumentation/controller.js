@@ -15,7 +15,7 @@ abacus.WebServiceDocumentation.Controller = function()
       var outer = this;
       var def = new jQuery.Deferred(function(deferred)
       {
-         var jsFiles = ['/lib/abacus/help/wsDocumentation/model.js', '/lib/abacus/help/wsDocumentation/view.js'];
+         var jsFiles = ['lib/abacus/help/wsDocumentation/model.js', 'lib/abacus/help/wsDocumentation/view.js'];
          jQuery.when(outer.loadJs(jsFiles)).done(function()
          {
             outer.model = new abacus.WebServiceDocumentation.Model(outer);

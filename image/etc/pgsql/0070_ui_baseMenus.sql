@@ -30,7 +30,7 @@ select abacus_ui.uiStructureAddMenuItem('user', null, 'control_menu', null, null
 
 -- right side should have '<USERNAME> menu with user icon, with 'Account Settings' and 'Logout'
 select abacus_ui.uiStructureAddMenuItem('user', 'control_menu', 'user_menu', 'user_menu', null,
-                                        '/lib/abacus/user/user.authentication.js', null,
+                                        'lib/abacus/user/user.authentication.js', null,
                                         'userModule.addUserPanel()', null, null, 2);
 
 select abacus_ui.uiStructureAddMenuItem('user', null, 'main_menu', null, null, null, null, null, null, null, 0);
@@ -42,12 +42,12 @@ select abacus_ui.uiStructureAddMenuItem('admin',    'main_menu', 'settings', 'Ap
 
 -- Obsolete
 --select abacus_ui.uiStructureAddMenuItem('admin', 'settings', 'user_mgt', 'User Management', null,
---                                        '/lib/abacus/user/user.management.js', 'userManagementModule.showUserManagement()',
+--                                        'lib/abacus/user/user.management.js', 'userManagementModule.showUserManagement()',
 --                                        null, null,
 --                                        'user', 10);
 
 select abacus_ui.uiStructureAddMenuItem('admin', 'settings', 'whitelist_mgt', 'Whitelist Address Management', null,
-                                        '/lib/abacus/whitelist/whitelist.management.js', 'whitelistAddressManagementModule.showWhitelistAddressManagement()',
+                                        'lib/abacus/whitelist/whitelist.management.js', 'whitelistAddressManagementModule.showWhitelistAddressManagement()',
                                         null, null,
                                         'user', 20);
 
@@ -57,21 +57,21 @@ select abacus_ui.uiStructureAddMenuItem('user', 'main_menu', 'help', 'Help', nul
                                         'question-sign',  90);
 
 select abacus_ui.uiStructureAddMenuItem('user', 'help', 'about', 'About', null,
-                                        '/lib/abacus/help/about/system/controller.js', 'abacus.About.controller.showModal()',
+                                        'lib/abacus/help/about/system/controller.js', 'abacus.About.controller.showModal()',
                                         null, null,
                                         'info-sign',  1);
 
 select abacus_ui.uiStructureAddMenuItem('user', 'help', 'swDetails', 'Installed Software Details', null,
-                                        '/lib/abacus/help/about/software/controller.js','abacus.Software.controller.showPanel()',
+                                        'lib/abacus/help/about/software/controller.js','abacus.Software.controller.showPanel()',
                                         null, null,
                                         'question-sign',  2);
 
 select abacus_ui.uiStructureAddMenuItem('user', 'help', 'swDetailsNew', 'Installed Docker Containers Details', null,
-                                        '/lib/abacus/help/about/containers/controller.js','abacus.Containers.controller.showPanel()',
+                                        'lib/abacus/help/about/containers/controller.js','abacus.Containers.controller.showPanel()',
                                         null, null,
                                         'question-sign',  3);
 
 select abacus_ui.uiStructureAddMenuItem('user', 'help', 'wshelp', 'Web Service Documentation', null,
-                                        '/lib/abacus/help/wsDocumentation/controller.js', 'abacus.WebServiceDocumentation.controller.showPanel()',
+                                        'lib/abacus/help/wsDocumentation/controller.js', 'abacus.WebServiceDocumentation.controller.showPanel()',
                                         null, null,
                                         'resize-horizontal', 4);

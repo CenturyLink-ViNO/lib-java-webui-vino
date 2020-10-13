@@ -11,7 +11,7 @@ abacus.WebServiceDocumentation.Model = function()
    {
       var def = jQuery.Deferred(function(deferred)
       {
-         var url = '/ui/webServiceDocumentation/list';
+         var url = 'ui/webServiceDocumentation/list';
          var success = function(json)
          {
             if (json.hasOwnProperty('error'))

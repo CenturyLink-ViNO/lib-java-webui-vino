@@ -11,7 +11,7 @@ abacus.Software.Model = function()
    {
       var def = jQuery.Deferred(function(deferred)
       {
-         var url = '/ui/help/about/installedSoftwareDetails';
+         var url = 'ui/help/about/installedSoftwareDetails';
          var success = function(json)
          {
             if (json.hasOwnProperty('error'))

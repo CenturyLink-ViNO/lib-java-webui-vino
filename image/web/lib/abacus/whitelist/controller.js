@@ -5,7 +5,7 @@
 window.AbacusWhitelistedAddressController = function(baseId)
 {
    var jsFiles = [
-      '/lib/abacus/whitelist/model.js', '/lib/abacus/whitelist/view.js', '/lib/abacus/whitelist/dataobject.js'
+      'lib/abacus/whitelist/model.js', 'lib/abacus/whitelist/view.js', 'lib/abacus/whitelist/dataobject.js'
    ];
    this.renderPanel = function()
    {

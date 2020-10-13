@@ -1,7 +1,7 @@
 /*globals jQuery */
 /*globals jsInclude */
-jsInclude('/lib/abacus/jqPlugins/jquery.utils.js'); /*global jqUtils */
-jsInclude('/lib/abacus/abacusUtils.js');               /*global AbacusUtils */
+jsInclude('lib/abacus/jqPlugins/jquery.utils.js'); /*global jqUtils */
+jsInclude('lib/abacus/abacusUtils.js');               /*global AbacusUtils */
 
 (function()
 {

@@ -18,7 +18,7 @@
 // }
 
 jQuery.ajax({
-   url: '/lib/abacus/skeleton.head.html',
+   url: 'lib/abacus/skeleton.head.html',
    success: function(data)
    {
       jQuery('head').append(data);
@@ -40,46 +40,46 @@ function ProductHomePage()
 }
 var productHomePage = new ProductHomePage();
 
-jQuery.when(jQuery('#bodySkeleton').load('/lib/abacus/skeleton.body.html')).then(function()
+jQuery.when(jQuery('#bodySkeleton').load('lib/abacus/skeleton.body.html')).then(function()
 {
    jQuery.when(
-      jsInclude('/lib/abacus-ots/dataTables/DataTables-1.10.18/js/jquery.dataTables.min.js'),
-      jsInclude('/lib/abacus/util/util.forms.js')
+      jsInclude('lib/abacus-ots/dataTables/DataTables-1.10.18/js/jquery.dataTables.min.js'),
+      jsInclude('lib/abacus/util/util.forms.js')
    ).then(function()
    {
       jQuery.when(
-         jsInclude('/lib/abacus-ots/jquery-graceful-websocket/jquery.gracefulWebSocket.js'),
-         jsInclude('/lib/abacus-ots/dataTables/Buttons-1.5.2/js/dataTables.buttons.min.js'),
-         jsInclude('/lib/abacus-ots/dataTables/Select-1.2.6/js/dataTables.select.min.js'),
-         jsInclude('/lib/abacus-ots/dataTables/DataTables-1.10.18/js/dataTables.bootstrap.js'),
-         jsInclude('/lib/abacus-ots/dataTables/Responsive-2.2.2/js/dataTables.responsive.js'),
-         jsInclude('/lib/abacus-ots/jsTree/jstree.min.js'),
-         jsInclude('/lib/abacus-ots/selectize/selectize.min.js'),
-         jsInclude('/lib/abacus-ots/base64/jquery.base64.js'),
-         jsInclude('/lib/abacus-ots/crypto-js/rollups/sha256.js'),
-         jsInclude('/lib/abacus-ots/smartMenus/jquery.smartmenus.js'),
-         jsInclude('/lib/abacus/abacusUtils.js'),
-         jsInclude('/lib/abacus/util/util.localStorage.js'),
-         jsInclude('/lib/abacus-ots/bootstrapValidator/bootstrapValidator.min.js'),
-         jsInclude('/lib/abacus/util/jquery.abacusDataTablesWrapper.js'),
-         jsInclude('/lib/abacus/util/AbstractController.js'),
-         jsInclude('/lib/abacus/util/AbstractDataObject.js'),
-         jsInclude('/lib/abacus/abacusBootstrapUtils.js'),
-         jsInclude('/lib/abacus/abacusDragAndDropUtils.js'),
-         jsInclude('/lib/abacus/jqPlugins/jquery.utils.js'),
-         jsInclude('/lib/abacus/util/AbacusBootstrapWizard.js'),
-         jsInclude('/lib/abacus/util/AbstractModel.js'),
+         jsInclude('lib/abacus-ots/jquery-graceful-websocket/jquery.gracefulWebSocket.js'),
+         jsInclude('lib/abacus-ots/dataTables/Buttons-1.5.2/js/dataTables.buttons.min.js'),
+         jsInclude('lib/abacus-ots/dataTables/Select-1.2.6/js/dataTables.select.min.js'),
+         jsInclude('lib/abacus-ots/dataTables/DataTables-1.10.18/js/dataTables.bootstrap.js'),
+         jsInclude('lib/abacus-ots/dataTables/Responsive-2.2.2/js/dataTables.responsive.js'),
+         jsInclude('lib/abacus-ots/jsTree/jstree.min.js'),
+         jsInclude('lib/abacus-ots/selectize/selectize.min.js'),
+         jsInclude('lib/abacus-ots/base64/jquery.base64.js'),
+         jsInclude('lib/abacus-ots/crypto-js/rollups/sha256.js'),
+         jsInclude('lib/abacus-ots/smartMenus/jquery.smartmenus.js'),
+         jsInclude('lib/abacus/abacusUtils.js'),
+         jsInclude('lib/abacus/util/util.localStorage.js'),
+         jsInclude('lib/abacus-ots/bootstrapValidator/bootstrapValidator.min.js'),
+         jsInclude('lib/abacus/util/jquery.abacusDataTablesWrapper.js'),
+         jsInclude('lib/abacus/util/AbstractController.js'),
+         jsInclude('lib/abacus/util/AbstractDataObject.js'),
+         jsInclude('lib/abacus/abacusBootstrapUtils.js'),
+         jsInclude('lib/abacus/abacusDragAndDropUtils.js'),
+         jsInclude('lib/abacus/jqPlugins/jquery.utils.js'),
+         jsInclude('lib/abacus/util/AbacusBootstrapWizard.js'),
+         jsInclude('lib/abacus/util/AbstractModel.js'),
          jsInclude('/auth/js/keycloak.js')
       ).then(function()
       {
-         jQuery.when(jsInclude('/lib/abacus/util/util.menuBuilder.js')).then(function()
+         jQuery.when(jsInclude('lib/abacus/util/util.menuBuilder.js')).then(function()
          {
-            jsInclude('/lib/abacus-ots/moment-develop/moment.js');
-            jsInclude('/lib/abacus-ots/jQuery.plugins/cron/jquery-cron.js');
-            jsInclude('/lib/abacus-ots/jQuery.plugins/gentleSelect/jquery-gentleSelect.js');
-            jsInclude('/lib/abacus/user/user.authentication.js');
-            jsInclude('/lib/abacus/util/abacus.json.js');
-            jsInclude('/lib/abacus-ots/ace/src-min/ace.js');
+            jsInclude('lib/abacus-ots/moment-develop/moment.js');
+            jsInclude('lib/abacus-ots/jQuery.plugins/cron/jquery-cron.js');
+            jsInclude('lib/abacus-ots/jQuery.plugins/gentleSelect/jquery-gentleSelect.js');
+            jsInclude('lib/abacus/user/user.authentication.js');
+            jsInclude('lib/abacus/util/abacus.json.js');
+            jsInclude('lib/abacus-ots/ace/src-min/ace.js');
          });
       });
    });
@@ -131,9 +131,9 @@ jQuery.when(jQuery('#bodySkeleton').load('/lib/abacus/skeleton.body.html')).then
    });
    jQuery.when( // jsInclude('/lib/abacus-ots/semantic-ui/dist/semantic.min.js'), // Don't mix semantic JS with
       // boostrap JS
-      jsInclude('/lib/bootstrap/js/bootstrap.js'),
-      jsInclude('/lib/abacus-ots/bootstrap.bootbox/bootbox.js'),
-      jsInclude('/lib/abacus/util/util.pageManipulation.js')
+      jsInclude('lib/bootstrap/js/bootstrap.js'),
+      jsInclude('lib/abacus-ots/bootstrap.bootbox/bootbox.js'),
+      jsInclude('lib/abacus/util/util.pageManipulation.js')
    );
    // Control script to attach event listeners and such to make the page work
    jQuery(document).ready(function()
@@ -160,7 +160,7 @@ jQuery.when(jQuery('#bodySkeleton').load('/lib/abacus/skeleton.body.html')).then
             otherIcon.css('height', '44px');
             jQuery('#mainPageAuxIcon').append(otherIcon);
          }
-         var mainIcon = jQuery('<img/>').attr('src', '/lib/abacus/img/logo-small.png');
+         var mainIcon = jQuery('<img/>').attr('src', 'lib/abacus/img/logo-small.png');
          mainIcon.attr('alt', 'CenturyLink logo');
          mainIcon.css('height', '44px');
          mainIcon.css('width', '240px');

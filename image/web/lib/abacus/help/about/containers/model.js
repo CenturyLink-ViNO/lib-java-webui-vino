@@ -11,7 +11,7 @@ abacus.Containers.Model = function()
    {
       var def = jQuery.Deferred(function(deferred)
       {
-         var url = '/ui/help/about/installedContainersDetails';
+         var url = 'ui/help/about/installedContainersDetails';
          var success = function(json)
          {
             if (json.hasOwnProperty('error'))

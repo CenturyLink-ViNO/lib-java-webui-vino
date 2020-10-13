@@ -10,7 +10,7 @@ abacus.About.Controller = function()
       var outer = this;
       var def = new jQuery.Deferred(function(deferred)
       {
-         var jsFiles = ['/lib/abacus/help/about/system/model.js', '/lib/abacus/help/about/system/dom.js'];
+         var jsFiles = ['lib/abacus/help/about/system/model.js', 'lib/abacus/help/about/system/dom.js'];
          jQuery.when(outer.loadJs(jsFiles)).done(function()
          {
             outer.model = new abacus.About.Model(outer);

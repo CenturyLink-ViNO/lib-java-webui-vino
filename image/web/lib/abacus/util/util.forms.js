@@ -380,7 +380,7 @@ function FormBuilder(dataObject, dataTable)
       jQuery.when(deferredObject.done(function()
       {
          // Need to set up the editor after the container is on the dom
-         ace.config.set('basePath', '/lib/abacus-ots/ace/src-min');
+         ace.config.set('basePath', 'lib/abacus-ots/ace/src-min');
          var editor = ace.edit(item.id);
          editor.$blockScrolling = 'Infinity';
          if (item.hasOwnProperty('theme'))

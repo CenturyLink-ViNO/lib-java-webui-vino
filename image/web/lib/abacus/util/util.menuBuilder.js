@@ -38,7 +38,7 @@ function MenuBuilderModule()
       var response = false;
       var control_menu;
       var main_menu;
-      var url = '/ui/web-ui/menus';
+      var url = 'ui/web-ui/menus';
       var success = function(data)
       {
          response = data;
@@ -74,7 +74,7 @@ function MenuBuilderModule()
                   main_menu = response.main_menu.children;
                   module.menuJsonToList(main_menu, jQuery('#abacus-main-menu'));
                }
-               jQuery.getScript('/lib/abacus-ots/smartMenus/jquery.smartmenus.bootstrap.js');
+               jQuery.getScript('lib/abacus-ots/smartMenus/jquery.smartmenus.bootstrap.js');
             }
          }
       };

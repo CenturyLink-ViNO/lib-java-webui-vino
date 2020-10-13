@@ -11,7 +11,7 @@ abacus.About.Model = function()
    {
       var def = jQuery.Deferred(function(deferred)
       {
-         var url = '/ui/help/about/summary';
+         var url = 'ui/help/about/summary';
          var success = function(json)
          {
             if (json.hasOwnProperty('error'))
