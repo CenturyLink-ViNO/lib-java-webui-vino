@@ -38,7 +38,7 @@
 
    <target name='deps'>
       <build.dependent.library dir='lib-web/abacus-twitter-bootstrap'/>
-      <build.dependent.library dir='lib-web/abacus-jQuery'/>
+      <build.dependent.library dir='lib-web/abacus-jquery'/>
    </target>
 
    <target name='dist.js' depends='compile.javascript'>
